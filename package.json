@@ -1,0 +1,27 @@
+{
+  "name": "spa",
+  "version": "1.0.0",
+  "description": "single page application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --open --progress --config webpack.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.js",
+    "predeploy": "npm run build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "url-loader": "^4.1.1",
+    "file-loader": "^6.2.0",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
